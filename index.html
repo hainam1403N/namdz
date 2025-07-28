@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tặng Em 🌻</title>
+
+  <!-- Google Font viết tay -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f4e2d8, #d6ae7b);
+      background-attachment: fixed;
+      color: #5a3e2b;
+      overflow-x: hidden;
+    }
+
+    /* Slide mở đầu */
+    #intro-slide {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #f4e2d8, #d6ae7b);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+    }
+
+    #intro-slide h1 {
+      font-size: 2.5rem;
+      color: #a76d33;
+      margin-bottom: 30px;
+      animation: slideInTop 1.5s ease-in-out;
+    }
+
+    #intro-slide button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #d8a762;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-family: 'Pacifico', cursive;
+      transition: transform 0.2s ease;
+    }
+
+    #intro-slide button:hover {
+      transform: scale(1.05);
+      background-color: #c68c40;
+    }
+
+    .paper {
+      max-width: 700px;
+      margin: 80px auto;
+      background: #fffef9;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+      animation: fadeInSlide 1s ease-out forwards;
+    }
+
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #a76d33;
+      animation: slideInTop 1.5s ease-in-out;
+      font-family: 'Pacifico', cursive;
+    }
+
+    @keyframes slideInTop {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .typewriter {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .typewriter p {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid #a76d33;
+      white-space: nowrap;
+      letter-spacing: .05em;
+      animation:
+        typing 6s steps(60, end),
+        blink-caret .75s step-end infinite;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #a76d33; }
+    }
+
+    .sunflower {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeInSlide 1.5s ease-in;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #8a6f4d;
+      animation: slideInBottom 2s ease-in;
+      font-family: 'Pacifico', cursive;
+    }
+
+    @keyframes slideInBottom {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .surprise-btn {
+      display: block;
+      margin: 40px auto 0;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      background-color: #d8a762;
+      border: none;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .surprise-btn:hover {
+      transform: scale(1.05);
+      background-color: #c68c40;
+    }
+
+    .surprise-box {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      font-size: 1.2rem;
+      background-color: #fff5e6;
+      border-radius: 15px;
+      animation: fadeInBox 1s ease forwards;
+      font-family: 'Pacifico', cursive;
+    }
+
+    @keyframes fadeInBox {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .surprise-image {
+      width: 200px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .flower-bouquet {
+      display: block;
+      margin: 30px auto 0;
+      width: 160px;
+      animation: fadeInSlide 1s ease-in;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Slide 1 -->
+  <div id="intro-slide">
+    <h1>🎵 Một điều nhỏ xinh dành tặng em 🌻</h1>
+    <button onclick="startSurprise()">Mở iii</button>
+  </div>
+
+  <!-- Slide 2 -->
+  <div id="main-slide" style="display: none;">
+    <div class="paper">
+      <h1>Gửi đến Em 🌻</h1>
+      <img src="https://d1kwj86ddez2oj.cloudfront.net/11112023/Za6xgswdn8qk8CxlVHvBBfRWG6ATp8qraxV10B4Q.png" class="sunflower" />
+
+      <div class="typewriter">
+        <p>
+          Chúc Chamm sinh nhật vv mong ăn lớn nhanh để anh nhuôi<br>
+          thêm xinggai và lạc quan hơn nheee🥳💛💛<br>
+        </p>
+      </div>
+
+      <img src="data:image/jpeg;base64,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" class="flower-bouquet" />
+
+      <div class="footer">
+        — Mơ về em —
+      </div>
+
+      <button class="surprise-btn" onclick="showSurprise()">Có 1 điều anh muốn nói🤯😱🤫</button>
+      <div class="surprise-box" id="surprise">
+        Em dthw vcl🤓 <br/>
+        <img src="https://media.tenor.com/R0OoONbpLCMAAAAM/yellow.gif" class="surprise-image" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Nhạc nền -->
+  <audio id="bg-music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_19f3abfe68.mp3" type="audio/mpeg">
+    Trình duyệt không hỗ trợ âm thanh.
+  </audio>
+
+  <script>
+    function startSurprise() {
+      // Phát nhạc và chuyển slide
+      document.getElementById('bg-music').play();
+      document.getElementById('intro-slide').style.display = 'none';
+      document.getElementById('main-slide').style.display = 'block';
+    }
+
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+      document.querySelector('.surprise-btn').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
